@@ -3,4 +3,8 @@ public class Person {
     private int age;
     private int ssn;
     public Person() {}
+
+    public void sayHello() {
+        System.out.println("Hello");
+    }
 }
