@@ -4,6 +4,12 @@ public class Person {
     private int ssn;
     public Person() {}
 
+    public Person(String name, int age, int ssn) {
+        this.name = name ;
+        this.age = age ;
+        this.ssn = ssn ;
+    }
+
     public void sayHello() {
         System.out.println("Hello");
     }
