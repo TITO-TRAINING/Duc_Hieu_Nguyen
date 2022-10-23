@@ -7,4 +7,8 @@ public class Person {
     public void sayHello() {
         System.out.println("Hello");
     }
+
+    public int getAge() {
+        return this.age;
+    }
 }
