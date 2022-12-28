@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(/src/assets/fonts/Roboto/Roboto-Regular.ttf);
 }
 
 body {
@@ -11,4 +11,5 @@ body {
     font-size: 1rem;
     line-height: pxToRem(24);
     color: $text-color;
+    font-family: $primary-font;
 }
