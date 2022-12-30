@@ -6,7 +6,7 @@
 }
 
 .main-header {
-  height: pxToRem(768);
+  height: pxToRem(769);
   background-image: url("../assets/images/desktop/background-header.png");
 
   .container {
@@ -86,6 +86,67 @@
 
   // header mid
   &__mid {
-    width: 100%;
+    width: pxToRem(1046);
+    height: pxToRem(629);
+    margin-top: pxToRem(69);
+    display: flex;
+    justify-content: space-between;
+
+    &__phone {
+      position: relative;
+      height: pxToRem(551);
+      margin-right: pxToRem(40);
+      align-self: flex-end;
+
+      .phone-screen {
+        position: absolute;
+        top: pxToRem(90);
+        right: pxToRem(23);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: pxToRem(459);
+
+    .top-text {
+      margin-bottom: pxToRem(151);
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+    margin-bottom: pxToRem(30);
+    padding-left: pxToRem(15);
+    font-size: pxToRem(64);
+    font-weight: 400;
+    line-height: pxToRem(75);
+    letter-spacing: pxToRem(2);
+  }
+
+  &__sub-title {
+    margin-bottom: pxToRem(20);
+    line-height: pxToRem(36);
+    font-size: pxToRem(24);
+    color: #ffffff;
+  }
+
+  &__desc {
+    margin-bottom: pxToRem(99);
+    line-height: pxToRem(24);
+    font-size: pxToRem(16);
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  &__download {
+    margin-bottom: pxToRem(60);
+
+    .img-store:first-child {
+      margin-right: pxToRem(30);
+    }
   }
 }
