@@ -47,32 +47,52 @@
           </p>
         </div>
         <div class="main-header__download">
-          <img
-            src="../assets/images/desktop/appstore-badge.png"
-            alt="App Store"
-            class="img-store"
-          />
-
-          <img
-            src="../assets/images/desktop/google-play-badge.png"
-            alt="Google Play"
-            class="img-store"
-          />
+          <a href="#">
+            <img
+              src="../assets/images/desktop/appstore-badge.png"
+              alt="App Store"
+              class="img-store"
+            />
+          </a>
+          <a href="">
+            <img
+              src="../assets/images/desktop/google-play-badge.png"
+              alt="Google Play"
+              class="img-store"
+            />
+          </a>
         </div>
       </div>
-      <figure class="main-header__mid__phone">
-        <img
-          src="../assets/images/desktop/iphone.png"
-          alt="phone"
-          class="phone-img"
-        />
 
-        <img
-          src="../assets/images/desktop/iphone-screen.png"
-          alt=""
-          class="phone-screen"
-        />
-      </figure>
+      <div class="main-header__phone-ctn">
+        <figure class="main-header__mid__phone">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../assets/images/mobile/Iphone.png"
+            />
+            <img
+              src="../assets/images/desktop/iphone.png"
+              alt="phone"
+              class="phone-img"
+            />
+          </picture>
+        </figure>
+        <figure class="main-header__mid__screen">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../assets/images/mobile/Iphone-screen.png"
+            />
+            <img
+              src="../assets/images/desktop/iphone-screen.png"
+              alt=""
+              class="phone-img"
+            />
+          </picture>
+        </figure>
+      </div>
+
     </div>
   </div>
 </header>
