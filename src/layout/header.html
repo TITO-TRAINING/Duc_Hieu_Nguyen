@@ -7,18 +7,12 @@
       <div class="menu">
         <nav>
           <ul class="menu__list">
-            <li class="header-text nav-link">
-              <a href="#">Prices</a>
-            </li>
-            <li class="header-text nav-link">
-              <a href="#">Booking</a>
-            </li>
-            <li class="header-text nav-link">
-              <a href="#">Blog</a>
-            </li>
-            <li class="header-text nav-link">
-              <a href="#">Services</a>
-            </li>
+            <include
+            src="./src/components/header-list.html"
+            locals='{
+              "list": "[`Prices`, `Booking`, `Blog`, `Services`]"
+            }'
+            ></include>
           </ul>
         </nav>
         <div class="menu__switch">
