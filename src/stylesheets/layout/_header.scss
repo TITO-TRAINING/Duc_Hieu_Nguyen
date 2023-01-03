@@ -241,7 +241,7 @@
     margin-bottom: pxToRem(20);
     line-height: pxToRem(36);
     font-size: pxToRem(24);
-    color: #ffffff;
+    color: $text-white;
 
     @include tablet {
       font-size: pxToRem(12);
@@ -260,7 +260,7 @@
     line-height: pxToRem(24);
     font-size: pxToRem(16);
     font-weight: 400;
-    color: #ffffff;
+    color: $text-white;
 
     @include tablet {
       font-size: pxToRem(11);
