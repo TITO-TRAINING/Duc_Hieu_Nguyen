@@ -16,14 +16,28 @@
       max-width: 720px;
       padding: 28px 0;
     }
+
+    @include mobile {
+      max-width: 290px;
+      flex-wrap: wrap;
+    }
   }
 
   &__col {
     width: pxToRem(280);
     margin-right: pxToRem(29);
 
+    @include mobile {
+      max-width: 115px;
+      margin-top: 28px;
+    }
+
     &:last-child {
       margin-right: 0;
+
+      @include mobile {
+        margin-right: pxToRem(29);
+      }
     }
 
     .title {
@@ -52,6 +66,10 @@
 
       .link {
         margin-top: 12px;
+
+        @include mobile {
+          margin-top: 6px;
+        }
       }
     }
 
@@ -70,6 +88,13 @@
     @include tablet {
       max-width: 720px;
     }
+
+    @include mobile {
+      padding-bottom: 46px;
+      max-width: 290px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__coppyright {
@@ -80,9 +105,18 @@
       line-height: pxToRem(12.8);
       font-size: pxToRem(11);
     }
+
+    @include mobile {
+      text-align: center;
+      margin-top: 29px;
+    }
+
+
   }
 
   &__social {
+
+    width: fit-content;
 
     .social-img {
       @include tablet {
