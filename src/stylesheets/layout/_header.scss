@@ -2,7 +2,7 @@
 
 .header-text {
   font-size: pxToRem(18);
-  color: #ffffff;
+  color: $text-white;
 }
 
 .main-header {
@@ -93,9 +93,9 @@
             width: pxToRem(69);
             display: flex;
             background: transparent;
-            border: 2px solid #ffffff;
+            border: 2px solid $text-white;
             border-radius: 50px;
-            padding: 5px 5px;
+            padding: 5px;
           }
         }
       }
@@ -241,7 +241,7 @@
     margin-bottom: pxToRem(20);
     line-height: pxToRem(36);
     font-size: pxToRem(24);
-    color: #ffffff;
+    color: $text-white;
 
     @include tablet {
       font-size: pxToRem(12);
@@ -260,7 +260,7 @@
     line-height: pxToRem(24);
     font-size: pxToRem(16);
     font-weight: 400;
-    color: #ffffff;
+    color: $text-white;
 
     @include tablet {
       font-size: pxToRem(11);
