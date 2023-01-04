@@ -8,17 +8,15 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    max-width: 1140;
+    width: 100%;
     margin: 0 auto;
     padding: 43px 0;
 
     @include tablet {
-      max-width: 720px;
       padding: 28px 0;
     }
 
     @include mobile {
-      max-width: 290px;
       flex-wrap: wrap;
     }
   }
