@@ -18,23 +18,25 @@
 
     @include mobile {
       flex-wrap: wrap;
+      // justify-content: space-around;
     }
   }
 
   &__col {
-    width: pxToRem(280);
+    width: 30%;
     margin-right: pxToRem(29);
 
     @include mobile {
-      max-width: 115px;
+      width: 45%;
       margin-top: 28px;
+      margin-right: 0;
     }
 
     &:last-child {
       margin-right: 0;
 
       @include mobile {
-        margin-right: pxToRem(29);
+        // margin-right: 0;
       }
     }
 
@@ -78,18 +80,13 @@
   &__bottom {
     display: flex;
     padding: 28px 0 40px;
-    max-width: 1140;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     border-top: 1px solid #7d7d7d;
 
-    @include tablet {
-      max-width: 720px;
-    }
-
     @include mobile {
       padding-bottom: 46px;
-      max-width: 290px;
       flex-direction: column-reverse;
       align-items: center;
     }
