@@ -45,6 +45,10 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__col {
@@ -54,6 +58,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+      width: 40%;
+      margin: 0 auto 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__text {
