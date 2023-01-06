@@ -1,5 +1,19 @@
 @use "../abstracts" as *;
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 720px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+    max-width: inherit;
+  }
+}
+
 .header-text {
   font-size: pxToRem(18);
   color: $text-white;
@@ -8,7 +22,6 @@
 .main-header {
   background: url("../assets/images/desktop/background-header.png") no-repeat
     center center / cover;
-
 
   @include tablet {
     height: pxToRem(410);
@@ -110,13 +123,11 @@
     display: flex;
     position: relative;
     width: 85%;
-    height: pxToRem(629);
     margin-top: pxToRem(69);
     justify-content: space-between;
 
     @include tablet {
       width: auto;
-      height: pxToRem(100);
       margin-top: pxToRem(2);
     }
 
@@ -125,6 +136,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    .img-main {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
     }
     &__screen {
       position: absolute;
@@ -146,10 +164,11 @@
 
     &__phone {
       position: relative;
-      height: pxToRem(550);
+      top: 8px;
+
 
       @include tablet {
-        height: pxToRem(336);
+        top: 0;
         width: pxToRem(220);
       }
       @include mobile {
