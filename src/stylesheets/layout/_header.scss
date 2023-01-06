@@ -1,19 +1,5 @@
 @use "../abstracts" as *;
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-
-  @include tablet {
-    max-width: 720px;
-  }
-
-  @include mobile {
-    padding: 0 15px;
-    max-width: inherit;
-  }
-}
-
 .header-text {
   font-size: pxToRem(18);
   color: $text-white;
