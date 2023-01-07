@@ -295,6 +295,7 @@
     }
 
     .img-store {
+      display: unset;
       @include tablet {
         width: pxToRem(71);
         height: pxToRem(20);
