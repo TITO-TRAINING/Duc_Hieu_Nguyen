@@ -51,7 +51,7 @@
       border: 1px $border-input solid;
 
       @include tablet {
-        font-size: 10.76px;
+        font-size: pxToRem(10.76);
         line-height: 12.6px;
       }
     }
@@ -69,12 +69,12 @@
       }
       &::placeholder {
         font-family: $primary-font;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: pxToRem(14);
+        line-height: pxToRem(16);
 
         @include tablet {
-          font-size: 10.76px;
-          line-height: 12.6px;
+          font-size: pxToRem(10.76);
+          line-height: pxToRem(12.6);
         }
       }
     }
@@ -90,13 +90,13 @@
 
     .label--check {
       color: $text-white;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: pxToRem(16);
+      line-height: pxToRem(24);
       font-weight: 400;
 
       @include tablet {
-        font-size: 10.7556px;
-        line-height: 24px;
+        font-size: pxToRem(10.7556);
+        line-height: pxToRem(24);
       }
     }
 
@@ -126,14 +126,14 @@
       border-radius: 2rem;
       border: none;
       margin-bottom: 24px;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: pxToRem(16);
+      line-height: pxToRem(19);
       cursor: pointer;
 
       @include tablet {
         padding: 13px 40px;
         margin-bottom: 36px;
-        font-size: 11px;
+        font-size: pxToRem(11);
         line-height: 13px;
         letter-spacing: 1.5px;
       }
@@ -149,16 +149,17 @@
   &__info {
     padding-bottom: 50px;
     color: $text-white;
-    font-size: 18px;
+    font-size: pxToRem(18);
     line-height: 30px;
 
     @include tablet {
-      font-size: 10.76px;
+      font-size: pxToRem(10.76);
       line-height: 30px;
     }
 
     @include mobile {
       width: 90%;
+      padding-bottom: 25px;
     }
     & > figure, p {
       display: inline-block;
@@ -191,10 +192,7 @@
         @include tablet {
           height: 80%;
         }
-
       }
-
-
     }
 
   }
