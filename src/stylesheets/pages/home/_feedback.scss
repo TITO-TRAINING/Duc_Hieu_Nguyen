@@ -83,7 +83,6 @@
   }
 
   &__img {
-    position: absolute;
     transform: translateY(55px);
     position: absolute;
     bottom: 0;
@@ -101,7 +100,7 @@
     }
 
     @include mobile {
-      transform: translateX(-50%) translateY(80px);
+      transform: translate(-50%,80px) ;
     }
   }
 

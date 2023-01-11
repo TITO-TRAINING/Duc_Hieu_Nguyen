@@ -80,9 +80,8 @@
     }
 
     .checkbox-ctn {
-      position: relative;
       margin-bottom: 18px;
-
+      display: flex;
       @include tablet {
         margin-bottom: 8px;
       }
@@ -101,8 +100,6 @@
     }
 
     #checkbox--input {
-      position: absolute;
-      left: -25px;
       width: 18px;
       height: 18px;
       accent-color: $primary-color;
@@ -112,10 +109,6 @@
         content: "";
         position: absolute;
         display: none;
-      }
-
-      @include tablet {
-        left: -30px;
       }
     }
 
@@ -151,6 +144,9 @@
     color: $text-white;
     font-size: pxToRem(18);
     line-height: 30px;
+    figure,p {
+      display: inline-block;
+    }
 
     @include tablet {
       font-size: pxToRem(10.76);
@@ -161,9 +157,7 @@
       width: 90%;
       padding-bottom: 25px;
     }
-    & > figure, p {
-      display: inline-block;
-    }
+
 
     .icon-ctn {
       padding-left: 10px;

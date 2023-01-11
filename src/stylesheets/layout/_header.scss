@@ -8,7 +8,7 @@
 .main-header {
   background: url("../assets/images/desktop/background-header.png") no-repeat
     center center / cover;
-
+  position: relative;
 
   @include tablet {
     height: pxToRem(410);
@@ -116,7 +116,6 @@
 
   &__mid {
     display: flex;
-    position: relative;
     width: 85%;
 
     height: pxToRem(629);
@@ -277,9 +276,9 @@
     display: inline-block;
     @include mobile {
       position: absolute;
+      bottom: 0;
       left: 50%;
-      bottom: -30%;
-      transform: translateX(-50%);
+      transform: translate(-50%, 90%);
     }
 
     .img-store:first-child {
