@@ -10,6 +10,7 @@
     center center / cover;
   position: relative;
 
+
   @include tablet {
     height: pxToRem(410);
   }
@@ -149,6 +150,7 @@
     &__phone {
       position: relative;
       @include tablet {
+        top: 0;
         height: pxToRem(336);
         width: pxToRem(220);
       }
@@ -271,7 +273,6 @@
       bottom: -14%;
       transform: translateX(-50%);
     }
-
 
     .img-store:first-child {
       margin-right: pxToRem(30);
