@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/pages/index.html",
     "prepare": "husky install",
-    "build": "parcel build --output dist"
+    "build": "parcel build src/pages/index.html"
   },
   "keywords": [],
   "author": "",
