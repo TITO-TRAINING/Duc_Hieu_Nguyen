@@ -8,14 +8,11 @@
 .main-header {
   background: url("../assets/images/desktop/background-header.png") no-repeat
     center center / cover;
+  position: relative;
 
 
   @include tablet {
     height: pxToRem(410);
-  }
-
-  @include mobile {
-    height: pxToRem(425);
   }
 
   .header-container {
@@ -80,17 +77,14 @@
           height: pxToRem(25);
           margin-right: pxToRem(24.42);
         }
-
-        .menu__languages {
-          &__select {
-            height: pxToRem(36);
-            width: pxToRem(69);
-            display: flex;
-            background: transparent;
-            border: 2px solid $text-white;
-            border-radius: 50px;
-            padding: 5px;
-          }
+        .menu__languages__select {
+          height: pxToRem(36);
+          width: pxToRem(69);
+          display: flex;
+          background: transparent;
+          border: 2px solid $text-white;
+          border-radius: 50px;
+          padding: 5px;
         }
       }
     }
@@ -116,10 +110,8 @@
 
   &__mid {
     display: flex;
-    position: relative;
     width: 85%;
 
-    height: pxToRem(629);
     margin-top: pxToRem(69);
     justify-content: space-between;
 
@@ -278,7 +270,7 @@
     @include mobile {
       position: absolute;
       left: 50%;
-      bottom: -30%;
+      bottom: -14%;
       transform: translateX(-50%);
     }
 
