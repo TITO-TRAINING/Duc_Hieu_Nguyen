@@ -86,8 +86,24 @@
       letter-spacing: 1.5px;
 
       @include tablet {
-        padding: 13px 60px;
+        padding: 13px ;
         font-size: 11px;
+      }
+    }
+
+    form {
+      padding-bottom: 76px;
+      display: flex;
+      flex-direction: column;
+      width: 68%;
+      margin: 0 auto;
+
+      @include tablet {
+        width: 85%;
+      }
+
+      @include mobile {
+        width: 60%;
       }
     }
   }
