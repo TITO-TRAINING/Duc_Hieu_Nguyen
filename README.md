@@ -24,6 +24,9 @@
 
 - [Design2](<https://www.figma.com/file/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?t=MDRqpUL7jeS2GFzy-0>)
 
+## RESULT
+- [WEB](https://duc-hieu-nguyen-27fh4xkba-hieuducnguyen.vercel.app/)
+
 ## SOURCE CODE
 
 - Clone project : git clone git
